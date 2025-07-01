@@ -17,7 +17,8 @@
 body{
 margin:0;
 padding:0;
-line-height:1.6; letter-spacing:1px;
+line-height:1.6;
+letter-spacing:1px;
 font-family:Verdana, Helvetica, sans-serif;
 font-size:12px;
 color:#333;
@@ -31,7 +32,8 @@ margin:0 auto;
 #top {
 width:780px;
 margin:30px auto;
-} border:1px solid #333;
+border:1px solid #333;
+}
 #header{
 width:100%;
 height: 80px;
