@@ -14,7 +14,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	private String loginUserId;
 	private String loginPassword;
 	private String result;
-	private Map<String, Object>session;
+	private Map<String, Object> session;
 
 	public String execute(){
 		 LoginDAO loginDAO = new LoginDAO();
@@ -25,7 +25,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		 loginDTO = loginDAO.getLoginUserInfo(loginUserId, loginPassword);
 		 session.put("loginUser", loginDTO);
 
-		 if(((LoginDTO)session.get("loginUser")).getLoginFlg()){
+		 if(((LoginDTO) session.get("loginUser")).getLoginFlg()){
 			 result = SUCCESS;
 			 BuyItemDTO buyItemDTO = buyItemDAO.getBuyItemInfo();
 
