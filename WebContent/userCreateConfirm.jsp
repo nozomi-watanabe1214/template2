@@ -70,7 +70,7 @@ clear:both;
 
 				<tr id= "box">
 					<td>
-						<label>ログインID</label>
+						<label>ログインID:</label>
 					</td>
 					<td>
 						<s:property value = "loginUserId" escape = "false"/>
@@ -79,16 +79,16 @@ clear:both;
 
 				<tr id = "box">
 					<td>
-						<label>ログインPASS</label>
+						<label>ログインPASS:</label>
 					</td>
 					<td>
-						<s:property value = "loginUserId" escape = "false"/>
+						<s:property value = "loginPassword" escape = "false"/>
 					</td>
 				</tr>
 
 				<tr id = "box">
 					<td>
-						<label>ユーザー名</label>
+						<label>ユーザー名:</label>
 					</td>
 					<td>
 						<s:property value = "userName" escape = "false"/>
