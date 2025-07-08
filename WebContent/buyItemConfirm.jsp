@@ -10,8 +10,7 @@
 	<meta http-equiv = "imagetoolbar" content="no" />
 	<meta name = "description" content = "" />
 	<meta name = "keywords" content = "" />
-
-<title>Login画面</title>
+	<title>buyItemConfirm画面</title>
 
 <style type = "text/css">
 /* ========TAG LAYOUT======== */
@@ -52,38 +51,60 @@ height: 80px;
 background-color:black;
 clear:both;
 }
-
 </style>
 </head>
 <body>
-<div id = "header">
- 		<div id = "pr">
+	<div id = "header">
+		<div id = "pr">
 		</div>
 	</div>
 
 	<div id = "main">
 		<div id = "top">
-		<p>Login</p>
+			<p>BuyItemConfirm</p>
 		</div>
 		<div>
-			<h3>商品を購入する際にはログインをお願いします。</h3>
-			<s:form action = "LoginAction">
-				<s:textfield name = "loginUserId"/>
-				<s:password name = "loginPassword"/>
-				<s:submit value = "ログイン"/>
+			<s:form action = "BuyItemConfirmAction">
+			<table>
+			<tr>
+				<td>商品名</td>
+				<td>
+				<s:property value = "session.buyItem_name"/>
+				</td>
+			</tr>
+			<tr>
+				<td>値段</td>
+				<td>
+				<s:property value = "session.buyItem_price"/>
+					<span>円</span>
+				</td>
+			</tr>
+			<tr>
+				<td>購入個数</td>
+				<td>
+				<s:property value = "session.stock"/>
+					<span>個</span>
+				</td>
+			</tr>
+			<tr>
+				<td>支払い方法</td>
+				<td>
+				<s:property value = "session.pay"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+				<s:submit value = "完了"/>
+				</td>
+			</tr>
+			</table>
 			</s:form>
-			<br/>
-			<div>
-				<span>新規ユーザー登録は
-					<a href = '<s:url action = "UserCreateAction"/>'>こちら
-					</a>
-				</span>
-			</div>
 		</div>
 	</div>
 
-	<div id="footer">
-		<div id="pr">
+	<div id = "footer">
+		<div id = "pr">
 		</div>
 	</div>
 </body>
