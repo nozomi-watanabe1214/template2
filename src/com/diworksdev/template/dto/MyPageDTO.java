@@ -27,10 +27,10 @@ public class MyPageDTO {
 		this.totalCount = totalCount;
 		}
 
-	public String getPayMent(){
+	public String getPayment(){
 		return this.payment;
 		}
-	public void setPayMent(String payment){
+	public void setPayment(String payment){
 		this.payment = payment;
 		}
 	}
